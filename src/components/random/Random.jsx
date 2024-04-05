@@ -1,16 +1,13 @@
-// import "./Random.css";
+import "./Random.css";
 
-// function Random({min, max}) {
+function Random({ min, max }) {
 
-//     const randomNumber = Math.floor(Math.Random()* (max - min + 1) + min;
+    return (
+        <div>
+            <h4 className="border">{`Random value between ${min} and ${max} => ${Math.floor(Math.random() * (max - min) + min)}`}</h4>
+        </div>
+      )
+    }
 
-//     return (
-//         <div className="random-number">
-//             Random number between {min} and {max}: {randomNumber}
-//         </div>
-//     )
 
-//     )
-// }
-
-// export default Random;
+ export default Random;

@@ -1,20 +1,19 @@
 
 import "./Greetings.css";
 
-function Greetings({lang, children}) {
-let greetingText = "";
+function Greetings({ lang, children }) {
+    let greetingText = '';
 
     switch (lang) {
-        case "en":
-            greetingText =`hello ${children}`;
+        case 'en':
+            greetingText = `Hello ${children}`;
             break;
-        case "es":
-            greetingText = `hola ${children}`;
+        case 'es':
+            greetingText = `Hola ${children}`;
             break;
-}
+    }
 
-    return <div>{greetingText}</div>;
-
+    return <h3 className="border">{greetingText}</h3>;
 }
 
 export default Greetings;

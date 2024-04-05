@@ -15,6 +15,7 @@ function IdCard({ lastName, firstName, gender, height, birth, picture }) {
         </div>
 
         <div className="idCard">
+
             <img src="https://randomuser.me/api/portraits/women/44.jpg" alt={`${firstName} ${lastName}`} />
             
                 <p>Last Name: Delores </p>
